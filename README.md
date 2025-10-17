@@ -20,7 +20,7 @@ It demonstrates an **end-to-end data analysis workflow** — from SQL-based data
 ---
 
 ## 🧰 Dataset
-**Source:** [Kaggle – Superstore Sales Dataset (Original Data)](https://www.kaggle.com/datasets/juhi1996/superstore?select=Sample+-+Superstore.csv)  
+**Source (original):** [Kaggle – Superstore Sales Dataset by Rohit Sahoo](https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting)  
 **Cleaned File Used:** `Superstore_Sales_Cleaned.csv`  
 **Rows:** ~10,000  
 **Columns:** 19 (including derived columns `Year` and `Month`)
