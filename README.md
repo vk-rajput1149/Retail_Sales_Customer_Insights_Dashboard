@@ -20,10 +20,13 @@ It demonstrates an **end-to-end data analysis workflow** — from SQL-based data
 ---
 
 ## 🧰 Dataset
-**Source:** [Kaggle - Superstore Sales Dataset](https://www.kaggle.com/datasets/juhi1996/superstore?select=Sample+-+Superstore.csv)  
-**File Used:** `Superstore_Sales_Cleaned.csv`  
+**Source:** [Kaggle – Superstore Sales Dataset (Original Data)](https://www.kaggle.com/datasets/juhi1996/superstore?select=Sample+-+Superstore.csv)  
+**Cleaned File Used:** `Superstore_Sales_Cleaned.csv`  
 **Rows:** ~10,000  
 **Columns:** 19 (including derived columns `Year` and `Month`)
+
+**About the Dataset:**  
+The Superstore dataset simulates a retail company’s transactional data, containing details like order date, customer information, sales, region, and product categories. It’s widely used for building data visualization and analytics projects.
 
 ---
 
@@ -44,10 +47,10 @@ Example queries include:
 
 ```sql
 -- Total Sales
-SELECT ROUND(SUM(Sales), 2) AS Total_Sales FROM superstore_sales;
+SELECT SUM(Sales) AS Total_Sales FROM superstore_sales;
 
 -- Sales by Region
-SELECT Region, ROUND(SUM(Sales), 2) AS Total_Sales
+SELECT Region, SUM(Sales) AS Total_Sales
 FROM superstore_sales
 GROUP BY Region
 ORDER BY Total_Sales DESC;
